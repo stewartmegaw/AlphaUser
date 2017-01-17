@@ -24,11 +24,18 @@
         "bjyoungblood/bjy-authorize": "1.4.0",
         "zf-commons/zfc-user": "1.4.4",
         "zf-commons/zfc-user-doctrine-orm": "1.0.*",
-        "doctrine/doctrine-orm-module": "~0.9.2"
+        "doctrine/doctrine-orm-module": "~0.9.2",
+        "stewartmegaw/alpha-user-base": "dev-master"
     },
     "autoload": {
         "psr-0": {
             "AlphaUser\\": "src/"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/stewartmegaw/AlphaUserBase.git"
+        }
+    ]
 }
