@@ -15,8 +15,13 @@ use AlphaUserBase\Entity\AlphaUserBase;
  * An example of how to implement a role aware user entity.
  *
  * @ORM\Entity
- * @ORM\Table(name="users_sub")
  *
  * @author Tom Oram <tom@scl.co.uk>
  */
-class User extends AlphaUserBase { }
+class User extends AlphaUserBase {
+
+    public function __construct() {
+        parent::__construct();
+    }
+
+}
